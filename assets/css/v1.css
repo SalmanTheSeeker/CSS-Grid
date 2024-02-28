@@ -27,6 +27,7 @@ body{
     gap: 20px;
     padding: 20px;
     padding-top: 0px;
+    padding-bottom: 0px;
     text-align: center;
     grid-template-rows: 50px 30px 80px 220px 50px;
 
@@ -52,6 +53,9 @@ body{
     grid-area: header;
     /* background-color: #C57400; */
 
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
 }
 .menu{ 
     grid-area: menu;
@@ -76,4 +80,7 @@ body{
 .footer{ 
     grid-area: footer;
     /* background-color: #A8340D; */
+
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
