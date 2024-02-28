@@ -1,0 +1,79 @@
+/* https://neumorphism.io */
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #151515;
+}
+
+.container{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'menu menu menu'
+    'box1 box2 sidebar'
+    'content content sidebar'
+    'content content sidebar'
+    'footer footer footer';
+    background-color: #151515;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+    grid-template-rows: 50px 30px 80px 220px 50px;
+
+}
+
+.items{
+
+    /* display: none; */
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    border-radius: 10px;
+    border: solid #191919 1px;
+    background: linear-gradient(145deg, #292929, #303030);
+    
+    box-shadow:  8px 8px 9px #191919,
+                -8px -8px 9px #202020;
+
+
+
+}
+
+.header{
+    grid-area: header;
+    /* background-color: #C57400; */
+
+}
+.menu{ 
+    grid-area: menu;
+    /* background-color: #3CB502; */
+}
+.box1{ 
+    grid-area: box1;
+    /* background-color: #5503E4; */
+}
+.box2{ 
+    grid-area: box2;
+    /* background-color: #C79CB0; */
+}
+.sidebar{ 
+    grid-area: sidebar;
+    /* background-color: #0101DF; */
+}
+.content{ 
+    grid-area: content;
+    /* background-color: #51EF00; */
+}
+.footer{ 
+    grid-area: footer;
+    /* background-color: #A8340D; */
+}
